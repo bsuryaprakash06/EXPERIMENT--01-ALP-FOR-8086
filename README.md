@@ -38,97 +38,118 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 
 ## Programs for arithmetic  operations
 
-## Addition  of 8 bit ALP 
-```asm
-Mov AL,74H
-MOV BL,69H
-ADD AL,BL
+````markdown
+```assembly
+MOV AX,1234H
+MOV BX,3323H
+ADD AX,BX
+HLT
+````
+
+**Output**
+![ADD](https://github.com/user-attachments/assets/982b0974-d021-4cbb-8b0f-c45251f1bfe6)
+
+---
+
+## Subtraction of 16-bit ALP
+
+```assembly
+MOV AX,1234H
+MOV BX,3323H
+SUB AX,BX
 HLT
 ```
 
+**Output**
+![SUB](https://github.com/user-attachments/assets/8d8f33e7-6b2f-4485-b146-dbd7d3b3751b)
 
-## Output  
+---
 
- <img width="1080" height="560" alt="image" src="https://github.com/user-attachments/assets/20f8b16a-4eb8-43bb-a06b-ae855f762112" />
+## Multiplication of ALP
 
-## Subtraction   of 8 bit numbers  ALP 
- ```asm
-Mov AL,74H
-MOV BL,69H
-SUB AL,BL
+```assembly
+ORG 100H
+MOV AX,1234H
+MOV BX,3323H
+MUL BX
 HLT
+RET
 ```
-## Output  
-<img width="1081" height="559" alt="image" src="https://github.com/user-attachments/assets/38ccaeb2-ab24-4fa9-b0d0-49c4e3dce4fc" />
 
+**Output**
+![MUL](https://github.com/user-attachments/assets/1d8ce7a4-7144-4adc-8c85-38d025924149)
 
-## Multiplication alp 
-```asm
-org 100h
-Mov AL,74H
-MOV BL,69H
-MUL BL
-HLT
-ret
-```
- ## Output  
+---
 
-<img width="1077" height="558" alt="image" src="https://github.com/user-attachments/assets/8c1bd0fd-88bb-4023-8979-3c43dcd6f45f" />
+## Division of ALP
 
-## Division alp 
-```asm
-MOV AL,68H
-MOV BL,18H
-DIV BL
-HLT
-```
-## Output  
-
-<img width="1077" height="555" alt="image" src="https://github.com/user-attachments/assets/6e5ce05a-c689-497d-93ee-0ac2f9329075" />
-
-## And of 8 bit numbers ALP
-```asm
-MOV AL,33H
-MOV BL,44H
-AND AL,BL
-HLT
-```
-## Output
-<img width="1919" height="1021" alt="image" src="https://github.com/user-attachments/assets/056d77d3-9777-4106-8f44-6e07cc3e7234" />
-
-## OR of 8 bit numbers ALP
-```asm
-MOV AL,45H
-MOV BL,66H
-OR AL,BL
-HLT
-```
-## Output
-
-<img width="1919" height="1018" alt="image" src="https://github.com/user-attachments/assets/0b312a70-dc7b-4274-81ce-488f32934220" />
-
-## NOT of 8 bit number ALP
-```asm
-MOV AL,65H
-NOT AL
-HLT
-```
-## Output
-
-<img width="1919" height="1017" alt="image" src="https://github.com/user-attachments/assets/c61b7072-ae7a-45a0-ab36-e7b33e466a06" />
-
-## XOR of 8 bit number ALP
-```asm
-MOV AL,66H
-MOV BL,77H
-XOR AL,BL
+```assembly
+MOV AX,1234H
+MOV BX,3323H
+DIV BX
 HLT
 ```
 
-## Output
+**Output**
+![DIV](https://github.com/user-attachments/assets/3143db33-b072-4a3e-8916-19ef194a1040)
 
-<img width="1919" height="1019" alt="image" src="https://github.com/user-attachments/assets/b3f74a2f-0808-4f09-b185-726e34dce3fd" />
+---
 
+## AND of 16-bit numbers ALP
+
+```assembly
+MOV AX,1234H
+MOV BX,3323H
+AND AX,BX
+HLT
+```
+
+**Output**
+![AND](https://github.com/user-attachments/assets/2c4e3e5b-099b-49a3-9fb0-13cf0544e9b9)
+
+---
+
+## OR of 16-bit numbers ALP
+
+```assembly
+MOV AX,1234H
+MOV BX,3323H
+OR AX,BX
+HLT
+```
+
+**Output**
+![OR](https://github.com/user-attachments/assets/711d28e5-f812-4b7d-83d5-74b0ee9d2d97)
+
+---
+
+## NOT of 16-bit number ALP
+
+```assembly
+MOV AX,1234H
+NOT AX
+HLT
+```
+
+**Output**
+![NOT](https://github.com/user-attachments/assets/0d2e655a-375e-435e-8f23-f9c6bfeecd2d)
+
+---
+
+## XOR of 16-bit numbers ALP
+
+```assembly
+MOV AX,1234H
+MOV BX,3323H
+XOR AX,BX
+HLT
+```
+
+**Output**
+![XOR](https://github.com/user-attachments/assets/ad347c8a-b549-4f8f-a811-ea3e5e952d53)
+
+```
+```
 
 ## Result :
  
